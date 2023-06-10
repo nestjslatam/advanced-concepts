@@ -8,6 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
+    "esModuleInterop": true, //required for Piscina Lib
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,

@@ -1,0 +1,9 @@
+{
+  "git": {
+    "commitMessage": "Release: a new release v${version} was compiled",
+    "requireBranch": "main"
+  },
+  "github": {
+    "release": true
+  }
+}
