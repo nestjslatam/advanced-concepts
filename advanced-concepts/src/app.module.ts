@@ -9,6 +9,7 @@ import { HttpClientModule } from './http-client/http-client.module';
 import { TagsModule } from './tags/tags.module';
 import { EventEmitterModule } from '@nestjs/event-emitter';
 import { PaymentsModule } from './payments/payments.module';
+import { DataSourceModule } from './data-source/data-source.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { PaymentsModule } from './payments/payments.module';
     HttpClientModule.register({ baseUrl: 'http://nestjs.com' }),
     TagsModule,
     PaymentsModule,
+    DataSourceModule,
   ],
   controllers: [AppController],
   providers: [AppService],
