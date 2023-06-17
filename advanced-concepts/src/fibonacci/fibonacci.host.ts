@@ -14,11 +14,11 @@ export class FibonnaciWorkerHost
   }
 
   onApplicationBootstrap() {
-    this.worker = new Worker(join(__dirname, 'fibonacci.worker.js'));
-    this.message = fromEvent(this.worker, 'message') as unknown as Observable<{
-      id: string;
-      result: number;
-    }>;
+    // this.worker = new Worker(join(__dirname, 'fibonacci.worker.js'));
+    // this.message = fromEvent(this.worker, 'message') as unknown as Observable<{
+    //   id: string;
+    //   result: number;
+    // }>;
   }
 
   run(n: number) {
