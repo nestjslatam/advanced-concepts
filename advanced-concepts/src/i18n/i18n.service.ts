@@ -1,9 +1,9 @@
 import { Inject } from '@nestjs/common';
 import { Injectable, Scope } from '@nestjs/common';
 import { REQUEST } from '@nestjs/core';
-import type * as Schema from '../assets/locales/en.json';
-import * as en from '../assets/locales/en.json';
-import * as pl from '../assets/locales/pl.json';
+import type * as Schema from '../../assets/locales/en.json';
+import * as en from '../../assets/locales/en.json';
+import * as pl from '../../assets/locales/pl.json';
 import format from 'string-format';
 
 type PathsToStringProps<T> = T extends string

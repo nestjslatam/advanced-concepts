@@ -6,9 +6,6 @@ export class AppService {
   constructor(private readonly i18nService: I18nService) {}
 
   getHello(): string {
-    return this.i18nService.translate('ERRORS.USER_NOT_FOUND', {
-      // 👈
-      firstName: 'Kamil',
-    });
+    return this.i18nService.translate('HELLO');
   }
 }
